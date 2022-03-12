@@ -36,7 +36,8 @@
                 echo "ID: " . $row_cliente['id'] . "<br>";
                 echo "Nome: " . $row_cliente['nome'] . "<br>";
                 echo "E-mail: " . $row_cliente['email'] . "<br>";
-                echo "<a href='editar.php?id=" . $row_cliente['id'] . "'>Editar</a><br><hr><br>";
+                echo "<a href='editar.php?id=" . $row_cliente['id'] . "'>Editar</a><br>";
+                echo "<a href='deletarADD.php?id=" . $row_cliente['id']. "'>Apagar</a><br><hr>";
             }
             //paginacao - qtd de clientes
             $res_pg = "SELECT COUNT(id) AS num_clientes FROM clientes";

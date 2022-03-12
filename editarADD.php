@@ -11,10 +11,10 @@
     $resultado_clientes = mysqli_query($conn, $atualiza_cliente);
 
     if(mysqli_affected_rows($conn)){
-        $_SESSION['msg'] = "<p style='color:green'>Usuario atualizado com sucesso</p>";
+        $_SESSION['msg'] = "<p style='color:green'>Cliente atualizado com sucesso</p>";
         header("Location: consultar.php");
     }else{
-        $_SESSION['msg'] = "<p style='color:red'>Usuario não atualizado, houve um erro.</p>";
+        $_SESSION['msg'] = "<p style='color:red'>Cliente não atualizado, houve um erro.</p>";
         header("Location: consultar.php?id=$id");
     }
 ?>

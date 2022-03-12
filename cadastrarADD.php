@@ -10,10 +10,10 @@
     $resultado_clientes = mysqli_query($conn, $adiciona_cliente);
 
     if(mysqli_insert_id($conn)){
-        $_SESSION['msg'] = "<p style='color:green'>Usuario cadastrado com sucesso</p>";
+        $_SESSION['msg'] = "<p style='color:green'>Cliente cadastrado com sucesso</p>";
         header("Location: consultar.php");
     }else{
-        $_SESSION['msg'] = "<p style='color:red'>Usuario não cadastrado</p>";
+        $_SESSION['msg'] = "<p style='color:red'>Cliente não cadastrado</p>";
         header("Location: cadastrar.php");
     }
 ?>
